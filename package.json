@@ -1,0 +1,15 @@
+{
+  "name": "tracedeck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TraceDeck 痕迹台 —— 工作痕迹看板与留痕助手（零依赖 Node，本地只读）",
+  "type": "module",
+  "bin": { "wt": "./wt.js" },
+  "scripts": {
+    "test": "node --test tests/",
+    "board": "node wt.js board",
+    "export": "node wt.js export",
+    "doctor": "node wt.js doctor"
+  },
+  "engines": { "node": ">=22" }
+}

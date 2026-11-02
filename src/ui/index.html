@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TraceDeck 痕迹台 — 工作痕迹看板</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">◈</span> TraceDeck <span class="sub">痕迹台</span></div>
+  <select id="profileSel" title="选择档案（数据源）"></select>
+  <input id="searchBox" type="search" placeholder="全文检索（标题/内容，Enter 检索）" />
+  <span id="modeBadge" class="badge">在线</span>
+  <button id="refreshBtn" title="重新扫描">⟳ 刷新</button>
+  <button id="themeBtn" title="切换深浅色">☀</button>
+</header>
+<nav class="tabs" id="tabs">
+  <button data-tab="overview" class="active">概览</button>
+  <button data-tab="timeline">时间线</button>
+  <button data-tab="milestones">里程碑链</button>
+  <button data-tab="issues">ISSUES 看板</button>
+  <button data-tab="ledger">往来台账</button>
+  <button data-tab="changelog">CHANGELOG</button>
+  <button data-tab="sessions">会话痕迹</button>
+</nav>
+<main id="main"><div class="loading">加载中…</div></main>
+<footer class="foot">TraceDeck · 本地只读看板 · 数据源：reports/ 日期档 + CHANGELOG + ISSUES + 双台账 + ZCode 会话库 · 不上传任何数据</footer>
+<div id="modal" class="modal hidden"><div class="modal-box">
+  <div class="modal-head"><span id="modalTitle">查看</span><span class="modal-actions"><button id="rawToggle">原文</button><button id="modalClose">✕</button></span></div>
+  <div id="modalBody" class="modal-body"></div>
+</div></div>
+<script src="/app.js"></script>
+</body>
+</html>

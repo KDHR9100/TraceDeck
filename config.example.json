@@ -1,0 +1,18 @@
+{
+  "port": 7788,
+  "sessions": {
+    "db": "C:/Users/<你>/.zcode/cli/db/db.sqlite"
+  },
+  "profiles": {
+    "my-project": {
+      "name": "示例档案",
+      "root": "D:/path/to/repo",
+      "reports": "D:/path/to/repo/reports",
+      "changelog": "D:/path/to/repo/CHANGELOG.md",
+      "issues": "D:/path/to/repo/ISSUES.md",
+      "ledgers": ["D:/path/to/repo/reports/台账-XX往来.md"],
+      "highlights": [{ "title": "交接文档", "path": "D:/path/to/repo/HANDOFF.md" }]
+    }
+  },
+  "defaultProfile": "my-project"
+}
